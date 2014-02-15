@@ -1,4 +1,5 @@
 LOG=/var/log/updates.log
+blank=~/config-files/blank.pl
 
 date
 date >> $LOG
@@ -8,11 +9,11 @@ sudo apt-get update > $LOG
 echo "Upgrading..."
 sudo apt-get upgrade -y
 
-~/.blank.pl
+blank
 echo "Distribution upgrade..."
 sudo apt-get dist-upgrade -y
 
-~/.blank.pl
+blank
 echo "Cleaning..."
 sudo apt-get autoclean -y >> $LOG
 
