@@ -15,6 +15,6 @@
 - **lxde-rc.xml.mac:** LXDE settings for Mac keyboard layout. To be placed in `~/.config/openbox/` as `lxde-rc.xml`. Run `lxpanelctl restart` to reload configuration file.
 - **lxde-rc.xml.standard:** LXDE settings for standard keyboard layout. To be placed in `~/.config/openbox/` as `lxde-rc.xml`. Run `lxpanelctl restart` to reload configuration file.
 - **make-4core.sublime-build:** Sublime Text build command. To be placed in `~/.config/sublime-text-3/Packages/User`.
-- **Preferences.sublime-settings:** Sublime Text user-defined settings.
+- **Preferences.sublime-settings:** Sublime Text user-defined settings. To be placed in `~/.config/sublime-text-3/Packages/User`.
 - **restart.sh:** Checks to see if the system needs to be restarted.
 - **update.sh:** Updates the repository, upgrades, and dist-upgrades. Stores pertinent information in a log.
