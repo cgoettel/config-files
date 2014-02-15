@@ -6,7 +6,7 @@
 - **BRIGHT.tmTheme:** Sublime Text color theme. To be placed in `~/.config/sublime-text-3/Packages`.
 - **clock.conf:** LXDE clock settings.
 - **.create.pl:** Creates TeX template file and Makefile in current directory (or where specified).
-- **crontab.juan-vasquez:** Cron entries for Juan Vasquez, the home media server.
+- **crontab.plaid-beard:** Cron entries for Juan Vasquez, the home media server.
 - **Default (Linux).sublime-keymap:** Sublime Text key map. To be placed in `~/.config/sublime-text-3/Packages/User`.
 - **.gitconfig:** Git configuration file.
 - **.gitpr.sh:** A spiced up version of `git pull --rebase`
