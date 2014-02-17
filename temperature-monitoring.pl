@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-my $DEBUG = 1;
+my $DEBUG = 0;
 
 # Temperature threshold. Change this variable to a reasonable number for each system.
 my $temperature_threshold = 40; # °C
