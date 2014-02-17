@@ -17,4 +17,5 @@
 - **make-4core.sublime-build:** Sublime Text build command. To be placed in `~/.config/sublime-text-3/Packages/User`.
 - **Preferences.sublime-settings:** Sublime Text user-defined settings. To be placed in `~/.config/sublime-text-3/Packages/User`.
 - **restart.sh:** Checks to see if the system needs to be restarted.
+- **temperature-monitoring.sh:** Monitors temperature using `sensor` and sends an e-mail when temperature exceeds a set threshold. This is a low-overhead alternative to installing Nagios or Zenoss.
 - **update.sh:** Updates the repository, upgrades, and dist-upgrades. Stores pertinent information in a log.

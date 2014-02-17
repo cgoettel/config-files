@@ -350,7 +350,7 @@
 </keybind>
 <keybind key="XF86Terminal">
 <action name="Execute">
-<command>x-terminal-emulator</command>
+<command>gnome-terminal</command>
 </action>
 </keybind>
 </keyboard>
