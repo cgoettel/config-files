@@ -1,1 +1,2 @@
 0 3 * * * `rsync -avz /home/colby/Music/* root@192.168.11.26:/nfs/Music/`
+* */1 * * * `/home/colby/config-files/temperature-monitoring.pl`
