@@ -5,21 +5,22 @@ use warnings;
 
 my $DEBUG = 1;
 
-# E-mail variables. Change these for each system.
-my $host = 'Juan Vasquez';
-my $subject = "WARNING: Temperature on $host is above threshold";
-my $email_address = 'colby.goettel@gmail.com';
-my $email_flag = 0;
-
 # Temperature threshold. Change this variable to a reasonable number for each system.
 my $temperature_threshold = 40; # °C
+
+# E-mail variables. Change these for each system.
+my $host = 'Juan Vasquez';
+my $subject = "WARNING: Temperature on $host is above $temperature_threshold°C";
+my $email_address = 'colby.goettel@gmail.com';
+my $email_flag = 0;
+my $message = '/tmp/sensors-email.tmp';
 
 # I/O variables
 my $sensors_file = '/tmp/sensors.tmp';
 my @current_line = ();
 
 # Run `sensors` and store as $message.
-my $message = system("sensors");
+system("sensors > $message");
 # Run `sensors` but remove any line not containing a temperature.
 system("sensors | egrep -v \"^\$|Virtual|ISA\" | egrep \":\" > $sensors_file");
 open IN, "<$sensors_file" or die "Failed to open IN: $!\n";
@@ -36,7 +37,7 @@ while ( <IN> )
     $current_line[1] =~ s/°C.*//; # Remove everything after and including °C.
     my $temperature = $current_line[1];
     
-    print "Temperature: $temperature\n" if $DEBUG;
+    # print "Temperature: $temperature\n" if $DEBUG;
     
     # If temperature is above any of the thresholds, append the device and temperature to the e-mail message.
     if ( $temperature >= $temperature_threshold )
@@ -47,10 +48,11 @@ while ( <IN> )
 
 close IN;
 
-print $message if $DEBUG;
+print $message . "\n" if $DEBUG;
+$email_flag = 1 if $DEBUG;
 
 # Send e-mail if $email_flag is set.
 if ( $email_flag )
 {
-    `echo "$message" | mail -s "$subject" -r $email_address $email_address`;
+    `mail -s "$subject" -r $email_address $email_address < $message`;
 }
