@@ -1,4 +1,4 @@
-LOG=/var/log/updates.log
+LOG=/tmp/updates.log
 blank=~/config-files/blank.pl
 
 date
@@ -22,4 +22,4 @@ sudo apt-get autoremove -y >> $LOG
 
 clear
 echo "Updated"
-~/.restart.sh
+~/config-files/restart.sh
