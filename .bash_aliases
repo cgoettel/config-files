@@ -6,7 +6,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # General
 alias ack='ack-grep'
 alias create='~/config-files/create.pl'
-alias dr='tree -a /media/colby/*/Dropbox'
+alias dr='tree -a ~/Dropbox'
 alias home='cd ~ && clear'
 alias ls='ls --group-directories-first --color=auto'
 alias ll='ls -lh --group-directories-first --color=auto'
@@ -23,6 +23,7 @@ alias gitca='git commit -a'
 alias gitp='git push'
 alias gitpr='~/config-files/gitpr.sh'
 alias gits='git status'
+alias git3='~/config-files/git3.pl'
 
 # System-related
 alias ins='sudo apt-get install'
