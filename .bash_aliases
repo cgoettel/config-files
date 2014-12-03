@@ -28,6 +28,7 @@ alias git3='~/config-files/git3.pl'
 # System-related
 alias ins='sudo apt-get install'
 alias upd='~/config-files/update.sh'
+alias sync-music='time rsync -avz /media/colby/*/Music/* root@jan-vigushin:/nfs/Music'
 
 # If no man page exists, open info page.
 man ()
