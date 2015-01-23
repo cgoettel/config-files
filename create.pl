@@ -34,3 +34,6 @@ print OUT "clean:";
 print OUT "\trm -f *.aux *.bbl *.blg *.brf *.lof *.log *.lot *.out *.toc\n";
 
 close OUT;
+
+`make > /dev/null`;
+`git add $file.tex $file.pdf Makefile`;
