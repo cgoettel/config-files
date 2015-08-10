@@ -3,3 +3,5 @@
 	name = Colby Goettel
 [push]
 	default = simple
+[color]
+	ui = 1

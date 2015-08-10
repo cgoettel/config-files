@@ -37,3 +37,4 @@ close OUT;
 
 `make > /dev/null`;
 `git add $file.tex $file.pdf Makefile`;
+`xdg-open $file.tex; xdg-open $file.pdf`;
