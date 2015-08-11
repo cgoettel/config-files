@@ -22,4 +22,7 @@ sudo apt-get autoremove -y >> $LOG
 
 clear
 echo "Updated"
-~/config-files/restart.sh
+
+if [ -f /var/run/reboot-required ]; then
+  echo 'reboot required'
+fi
