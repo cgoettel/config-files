@@ -13,7 +13,6 @@ alias ll='ls -lh --group-directories-first --color=auto'
 alias lla='ls -lAh --group-directories-first --color=auto'
 alias mkdir='mkdir -p'
 alias ping='ping -c3'
-alias rs='~/config-files/restart.sh'
 alias tree='tree -Ch'
 
 # Git
