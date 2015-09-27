@@ -14,6 +14,7 @@ alias lla='ls -lAh --group-directories-first --color=auto'
 alias mkdir='mkdir -p'
 alias ping='ping -c3'
 alias tree='tree -Ch'
+alias rs='if [ -f /var/run/reboot-required ]; then echo "reboot required"; fi'
 
 # Git
 alias gita='git add'
