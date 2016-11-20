@@ -1,7 +1,0 @@
-# interfaces(5) file used by ifup(8) and ifdown(8)
-iface eth1 inet static
-     address 192.168.70.200
-     network 192.168.0.1
-     netmask 255.255.128.0
-     broadcast 192.168.127.255
-     gateway 192.168.0.1
