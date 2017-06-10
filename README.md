@@ -1,4 +1,4 @@
-#config-files
+# config-files
 
 - **.bash_aliases:** Aliases.
 - **.bashrc:** Bash preferences.
